@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/charset.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="import" href="fonts/font.html">
+    <title>E-commerce</title>
+</head>
+<body>
+    <!-- navbar -->
+<div class="container">
+        <nav>
+        <div>
+            <img src="images/Airtable.png" alt="" width="60px" id="menu" onclick="append()">
+        </div>
+        <ul id="my-menu" >
+            <a href=""><li>Home</li></a>
+            <a id="my-drop" onclick="dropmenu()" style=" cursor: pointer;"><li>Shop<i class="fa-solid fa-chevron-down fa-bounce" style="color: white;"></i></li></a>
+            <a href=""><li>Deals</li></a>
+            <a href="Cart/index.html"><li>Cart</li></a>
+        </ul>
+        <div class="drop-down" style="display: none;">
+            <ul>
+                <a href="#ccd"><li>HTML/CSS</li></a>
+                <a href=""><li>Adobe Xd</li></a>
+            </ul>
+        </div>
+    </nav>
+
+</div>
+    <!-- landing -->
+    <div class="landing">
+        <h1>HI THERE !</h1>
+        <h2>We make <span>Websites</span> for you</h2>
+        <p>We are a small company , commerce Website that give you all 
+            your needs in web-dev.
+        </p>
+        <a href="" class="button">Learn more</a>
+    </div>
+<!-- what we do -->
+<div class="container">
+   <div class="wwd">
+    <div class="wwd-txt">
+        <h1>What We Do ?</h1>
+        <p>If you ever wanted to run your buisness with attractive website you have chosen 
+            the perfect company that will treat you like special client and save you money 
+            whenever your project is big it fits us and your pocket !
+        </p>
+        <img src="images/icons/AdobePhotoshop.png" alt="">
+        <img src="images/icons/AdobeXD.png" alt="">
+        <img src="images/icons/Dribbble.png" alt="">
+        <img src="images/icons/Google Chrome.png" alt="">
+        <img src="images/icons/HTML5.png" alt="">
+    </div>
+    <img src="images/wwd.jpg" alt="" width="300px" style="transition: .3s ease;">
+</div> 
+</div>
+<hr>
+<div class="container">
+<div class="pre-ord">
+    <h1 style="color: white;">Pre-ordred...No problem</h1>
+    <h2>We got websites ready to go :</h2>
+    <h2>Our Top 3 Wbsites</h2>
+          <div class="contain" id="ccd">
+        <div class="cards-content">
+
+          <div class="card">
+            <div class="imge-card"><img src="images/porto.PNG" alt="" /></div>
+            <div class="info">
+              <h3>Portofolio</h3>
+              <p>
+                Allow you simply to show your portofolio work from everything contains your work
+                ,your social links .....
+              </p>
+              <button>
+                <a class="read-more-card" href="https://moh20all.github.io/Education-website/" target="_blank"
+                  >Read More <i class="fas fa-angle-right"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imge-card">
+              <img src="images/mint.PNG" alt="" />
+            </div>
+            <div class="info">
+              <h3>Agency Website</h3>
+              <p>
+                Have an agency? no problem you can show what it does Houses, selling ,stocks....
+              </p>
+              <button>
+                <a class="read-more-card" href="https://moh20all.github.io/Mint-website/" target="_blank"
+                  >Read More <i class="fas fa-angle-right"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imge-card">
+              <img src="images/res.PNG" alt="" />
+            </div>
+            <div class="info">
+              <h3>Restaurante </h3>
+              <p>
+                A lot of restaurants want to advertise for their market 
+                showing menu's and taking order online...
+              </p>
+              <button>
+                <a class="read-more-card" href="https://moh20all.github.io/Resaurante/" target="_blank"
+                  >Read More <i class="fas fa-angle-right"></i
+                ></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<br>
+<h1>U thought That's all!</h1>
+<br>
+<h2>All This websites are customisable (Delete,add....)</h2>
+
+</div>
+<!-- Why you should choose us -->
+
+<div class="why-us">
+    <video src="videos/vid1.mp4" autoplay muted loop plays-inline class="back"></video>
+    <h1>Why You Should Choose Us .</h1>
+    <h2>Fast delivery</h2>
+    <h2>All sites custom</h2>
+    <h2>3 mind changes availble for basic</h2>
+    <h2>dashboard , Manager availble</h2>
+</div>
+<div class="container">
+    <div class="make">
+    <h1>Make your own website</h1>
+    <h2>Easy apply We will text you soon</h2>
+    <form action="">
+        <label for="">E-mail</label><br>
+        <input type="email" placeholder="E-mail"><br>
+        <label for="">Name</label><br>
+        <input type="text" placeholder="name"><br>
+        <label for="">Ideas</label><br>
+        <input type="text" placeholder="e.g(Tech,cards,videos....)"><br>
+        <label for="">Categories</label><br>
+    <div><input id="win" type="radio" name="Os" value="Tech" checked>
+        <label for="win">Tech</label></div>
+    <div><input id="lin" type="radio" name="Os" value="Cars">
+        <label for="lin">Cars</label></div>
+    <div><input id="mc" type="radio" name="Os" value="Agency">
+        <label for="mc">Agency</label></div>
+    <div><input id="mc" type="radio" name="Os" value="Buisness">
+        <label for="mc">Buisness</label></div><br>
+    </form>
+</div>
+<h2>or Sign up from <a href="sign/sub.html">Here</a></h2>
+</div>
+    <script src="js/main.js"></script>
+</body>
+</html>

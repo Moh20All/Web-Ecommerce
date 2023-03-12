@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    scroll-behavior: smooth;
+    font-family: poppins, sans-serif;
+    outline: none;
+    color: white;
+}
+/* Global vars */
+:root{
+    -xl:60px;
+}
+body{
+    background-color: #222222;
+}
+.container{
+    width: 80%;
+    margin: 10px 10%;
+}
+a{
+    text-decoration: none;
+    transition: .4s ease;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+nav ul{
+    list-style: none;
+    padding: 0 20px;
+}
+nav ul li{
+    display: inline;
+    padding: 0 20px;
+    transition: .3s ease;
+}
+nav ul li:hover{
+    color: #0d7cff;
+}
+@media (max-width:768px){
+    nav{
+        flex-direction: column;
+    }
+    nav ul li{
+        display: block;
+        margin: 10px 0;
+    }
+    nav ul{
+        display: none;
+        text-align: center;
+    }
+}
+.drop-down{
+    position: absolute;
+    bottom: -100px;
+    right: 178px;
+    z-index: 999;
+    color: white;
+    background-color: #222222;
+}
+.drop-down li{
+    display: block;
+    margin: 10px 0;
+}
+/* landing sec */
+.landing{
+    background-image: url('../images/bg1.jpg');
+    height: 90vh;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+.landing h1,.landing h2,.landing p{
+    color: white;
+    position: absolute;
+    top: 30%;left: 40px;
+    transform: translateY(-50%);
+    font-size: 60px;
+}
+.landing h2{
+    top: 45%;
+    font-size: 50px;
+}
+.landing h2 span{
+    color: #ffdf00;
+}
+.landing p{
+    top: 55%;
+    font-size: 30px;
+}
+.button {
+  color: #000000;
+  border: 6px solid #0d7cff;
+  border-radius:15px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: .4s;
+  position: absolute;
+  top: 70%;left: 40px;
+  transform: translateY(-50%);
+}
+
+.button:hover {
+  color: black;
+  letter-spacing:5px;
+  background-color: #0d7cff;
+  filter: drop-shadow(0 0 20px #0d7cff) contrast(2) brightness(2);
+}
+@media (max-width:768px){
+    .landing h1,.landing h2,.landing p{
+        position: static;
+        display: block;
+        transform: none;
+    }
+    .button{
+        left: 50%;
+    transform: translateX(-50%);
+    }
+    .wwd{
+        flex-direction: column;
+    }
+}
+/* What we do sec */
+.wwd{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.wwd h1,.pre-ord h1{
+    font-size: 60px;
+    color:#EB455F;
+}
+.wwd p{
+    font-size: 20px;
+    padding-right:60px;
+}
+.wwd .wwd-txt img{
+    width: 40px;
+    margin: 10px;
+    animation: bounce  reverse;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.wwd .wwd-txt img:nth-child(3){
+animation-delay: 1s;
+animation-duration: 3s;
+}
+.wwd .wwd-txt img:nth-child(4){
+animation-delay: 2s;
+animation-duration: 3s;
+}
+.wwd .wwd-txt img:nth-child(5){
+animation-delay: 3s;
+animation-duration: 3s;
+}
+.wwd .wwd-txt img:nth-child(6){
+animation-delay: 4s;
+animation-duration: 3s;
+}
+.wwd .wwd-txt img:nth-child(7){
+animation-delay: 5s;
+animation-duration: 3s;
+}
+.wwd>img:hover{
+    box-shadow: 15px 17px 27px 0px rgba(255,255,255,0.20);
+    transform: scale(1.01);
+}
+@keyframes bounce {
+   0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+   40% {transform: translateY(-20px);} 
+   60% {transform: translateY(-15px);} 
+} 
+.pre-ord{
+    font-family: 'Josefin Sans', sans-serif;
+}
+/* Why you should choose us */
+.why-us{
+    position: relative;
+}
+.back{
+    position: absolute;
+    right: 0;top: 0;
+    z-index: -1;
+}
+.why-us video{
+    filter: blur(3px);
+}
+.why-us h1{
+    margin: 10px 0;
+    font-size: 60px;
+    color: #EB455F;
+    text-align: center;
+}
+.why-us h2{
+    font-size: 50px;
+    margin-left: 70px;
+}
+.make{
+    margin-top: 400px;
+    position: relative;
+}
+.make label{
+    font-size: 20px;
+}
+.make input{
+    padding: 10px 40px;
+    font-size: 20px;
+    color: black;
+}
